@@ -1,4 +1,4 @@
-import { Services } from "@/types/services";
+import { Services } from "@/app/type/services";
 import Image from "next/image";
 import Link from "next/link";
 
