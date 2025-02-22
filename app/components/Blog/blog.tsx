@@ -12,9 +12,9 @@ const Blog = () => {
 
   useEffect(() => {
     if (currentPage > totalPages) {
-      setCurrentPage((prev) => Math.max(1, totalPages)); // Ensure we don't go below page 1
+      setCurrentPage((prev) => Math.max(1, totalPages));
     }
-  }, [totalPages, currentPage]); // ✅ Added currentPage to the dependency array
+  }, [totalPages, currentPage]);
 
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
@@ -24,8 +24,8 @@ const Blog = () => {
   const prevPage = () => setCurrentPage((prev) => Math.max(prev - 1, 1));
 
   return (
-    <section className="pb-[120px] pt-[10px]">
-      <div className="container">
+    <section className="pb-[120px] mt-[100px]]">  {/* 🔹 Navbar ke liye extra padding */}
+      <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           {currentBlogs.map((blog) => (
             <div
@@ -39,7 +39,6 @@ const Blog = () => {
           ))}
         </div>
 
-        {/* Pagination */}
         {totalPages > 1 && (
           <div className="flex justify-center items-center mt-10 space-x-2">
             <button

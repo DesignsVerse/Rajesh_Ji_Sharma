@@ -21,10 +21,10 @@ export default function BlogPost({ params }: { params: BlogPostParams }) {
   }
 
   return (
-    <main className="mt-20 mb-20 w-full min-h-screen flex flex-col items-center pt-16 px-6 md:px-12 lg:px-24 bg-gray-50 dark:bg-[#121723] text-black dark:text-white transition-all duration-300">
+    <main className="mt-20 mb-20 w-full min-h-screen flex flex-col items-center pt-16 px-6 md:px-12 lg:px-24 bg-white text-black transition-all duration-300">
       
       {/* Blog Container */}
-      <div className="w-full max-w-6xl bg-white dark:bg-gray-800 rounded-xl shadow-md p-10 border-4 border-[#800000]">
+      <div className="w-full max-w-6xl bg-white rounded-xl shadow-md p-10 border-4 border-[#800000]">
         
         {/* Blog Thumbnail with Background */}
         {post.thumbnail && (
@@ -44,22 +44,22 @@ export default function BlogPost({ params }: { params: BlogPostParams }) {
 
         {/* Blog Header */}
         <div className="text-center">
-          <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white">
+          <h1 className="text-5xl text-black font-extrabold">
             {post.title}
           </h1>
-          <p className="text-md text-gray-500 dark:text-gray-400 mt-3">
+          <p className="text-md text-black mt-3">
             Published on {post.publishDate} • {post.readTime} min read
           </p>
         </div>
 
         {/* Blog Content */}
-        <div>
+        <div className="text-black">
           {post.sections.map((section, index) => (
             <div key={index} className="p-8 rounded-xl">
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-200 mb-4">
+              <h2 className="text-2xl font-semibold text-black mb-4">
                 {section.heading}
               </h2>
-              <ReactMarkdown className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              <ReactMarkdown className="text-lg text-black leading-relaxed">
                 {section.content}
               </ReactMarkdown>
             </div>
@@ -67,19 +67,19 @@ export default function BlogPost({ params }: { params: BlogPostParams }) {
         </div>
 
         {/* Author Section */}
-        <div className="flex items-center mt-16 p-6 rounded-lg bg-gray-100 dark:bg-gray-900 shadow-md border-t-4 border-[#800000]">
+        <div className="flex items-center mt-16 p-6 rounded-lg bg-gray-100 shadow-md border-t-4 border-[#800000]">
           <Image
             src={post.author.image}
             width={60}
             height={60}
             alt={post.author.name}
-            className="rounded-full border-2 border-gray-300 dark:border-gray-700"
+            className="rounded-full border-2 border-gray-300"
           />
           <div className="ml-4">
-            <p className="text-lg font-semibold text-gray-900 dark:text-white">
+            <p className="text-lg font-semibold text-black">
               {post.author.name}
             </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm text-black">
               {post.author.designation}
             </p>
           </div>

@@ -13,34 +13,34 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar.svg',
+        profession: 'web-designer',
+        name: 'shoruya sharma',
+        imgSrc: '/images/wework/boy 1.png',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar3.svg',
+        profession: 'software engineer',
+        name: 'rahul sharma',
+        imgSrc: '/images/wework/boy 6.png',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar4.svg',
+        profession: 'data engineer',
+        name: 'sneha jain',
+        imgSrc: '/images/wework/girl 3.png',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar.svg',
+        profession: 'Chartered Accountant',
+        name: 'Neha kapoor',
+        imgSrc: '/images/wework/girl 1.png',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar3.svg',
+        profession: 'entrepreneur',
+        name: 'vijay sharma',
+        imgSrc: '/images/wework/na.png',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar4.svg',
+        profession: 'desinger',
+        name: 'shakti kapoor',
+        imgSrc: '/images/wework/ha.png',
     },
 ]
 
@@ -99,8 +99,8 @@ export default class MultipleItems extends Component {
                 <div className='mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8 '>
 
                     <div className="text-center">
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">Client Testimonials</h3>
-                        <h3 className="text-sm sm:text-xl text-center font-bold text-black justify-center lg:mr-48 my-2">Discover how our pooja services have transformed the lives of our clients. Read their testimonials and see the positive impact of our rituals on their spiritual journeys.</h3>
+                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-2 animate-fade-in-up hover:scale-105 transition-transform duration-300">Client Testimonials</h3>
+                        <h3 className="text-sm sm:text-xl text-center font-bold text-black justify-center lg:mr-48 my-2 animate-fade-in-down hover:scale-105 transition-transform duration-300">Discover how our pooja services have transformed the lives of our clients. Read their testimonials and see the positive impact of our rituals on their spiritual journeys.</h3>
 
                     </div>
 

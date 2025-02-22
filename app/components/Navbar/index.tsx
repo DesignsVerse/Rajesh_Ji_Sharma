@@ -1,42 +1,48 @@
-"use client"
+"use client";
+
 import Navbar from './Navbar';
 import React, { useEffect } from 'react';
 
 const Navbarin: React.FC = () => {
     useEffect(() => {
-        // The debounce function receives our function as a parameter
-        const debounce = (fn: Function) => {
-            // This holds the requestAnimationFrame reference, so we can cancel it if we wish
-            let frame: number;
-            // The debounce function returns a new function that can receive a variable number of arguments
+        // Page reload hone par scroll top par set ho
+        window.scrollTo(0, 0);
+
+        // Debounce function with setTimeout
+        const debounce = (fn: Function, delay = 150) => {
+            let timer: NodeJS.Timeout;
             return (...params: any[]) => {
-                // If the frame variable has been defined, clear it now, and queue for next frame
-                if (frame) {
-                    cancelAnimationFrame(frame);
-                }
-                // Queue our function call for the next frame
-                frame = requestAnimationFrame(() => {
-                    // Call our function and pass any params we received
+                clearTimeout(timer);
+                timer = setTimeout(() => {
                     fn(...params);
-                });
-            }
+                }, delay);
+            };
         };
 
-        // Reads out the scroll position and stores it in the data attribute
-        // so we can use it in our stylesheets
+        // Function to store scroll position
         const storeScroll = () => {
             document.documentElement.dataset.scroll = window.scrollY.toString();
-        }
+        };
 
-        // Listen for new scroll events, here we debounce our `storeScroll` function
-        document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+        // Debounced function
+        const debouncedScroll = debounce(storeScroll, 150);
 
-        // Update scroll position for first time
-        storeScroll();
-    }, [])
+        // Add event listener
+        document.addEventListener('scroll', debouncedScroll, { passive: true });
+
+        // Cleanup function to remove event listener
+        return () => {
+            document.removeEventListener('scroll', debouncedScroll);
+        };
+    }, []);
+
     return (
         <>
-            <Navbar />
+            <div className="fixed top-0 left-0 w-full z-50 bg-white">
+                <Navbar />
+            </div>
+            {/* Extra padding to prevent content from hiding behind navbar */}
+            <div className="pt-[80px]" />
         </>
     );
 }

@@ -24,21 +24,14 @@ const products: ProductType[] = [
         section: "Pages",
         link: ['404', 'Instructions', 'License']
     },
-//     {
-//         id: 4,
-//         section: "Others",
-//         link: ['Styleguide', 'Changelog']
-//     }
-]
+];
 
-const footer = () => {
+const Footer = () => {
     return (
-        <div className="bg-black -mt-40" id="first-section">
+        <div className="bg-black mt-20 relative" id="first-section">
             <div className="mx-auto max-w-2xl pt-48 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
-
                     {/* COLUMN-1 */}
-
                     <div className='col-span-4'>
                         <h3 className='text-white text-4xl font-semibold leading-9 mb-4 lg:mb-20'> Dummy Astro</h3>
                         <div className='flex gap-4'>
@@ -53,9 +46,7 @@ const footer = () => {
                             </div>
                         </div>
                     </div>
-
-                    {/* CLOUMN-2/3 */}
-
+                    {/* COLUMN-2/3 */}
                     {products.map((product) => (
                         <div key={product.id} className="group relative col-span-2">
                             <p className="text-white text-xl font-extrabold mb-9">{product.section}</p>
@@ -68,12 +59,10 @@ const footer = () => {
                             </ul>
                         </div>
                     ))}
-
                 </div>
             </div>
 
             {/* All Rights Reserved */}
-
             <div className="mx-auto max-w-2xl lg:max-w-7xl">
                 <div className="pt-5 pb-5 px-4 sm:px-6 lg:px-4 border-solid border-t border-footer">
                     <div className="mt-4 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 xl:gap-x-8">
@@ -91,10 +80,8 @@ const footer = () => {
                     </div>
                 </div>
             </div>
-
         </div>
+    );
+};
 
-    )
-}
-
-export default footer;
+export default Footer;

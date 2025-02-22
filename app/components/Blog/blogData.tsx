@@ -40,6 +40,45 @@ const blogData: Blog[] = [
       image: "/images/blog/author-01.png",
     },
   },
+  {
+    id: 4,
+    image: "/images/blog/blog-3.jpg",
+    title: "हिमाचल के इस मंदिर में होते हैं धर्मशाला, जागरण संवाददाता।",
+    paragraph: "धर्मशाला, जागरण संवाददाता। Kangra Famous Temple Baglamukhi Mata...",
+    tags: ["Temple", "Himalaya"],
+    publishDate: "December 01, 2024",
+    author: {
+      name: "John Doe",
+      designation: "Tech Writer",
+      image: "/images/blog/author-01.png",
+    },
+  },
+  {
+    id: 5,
+    image: "/images/blog/blog-3.jpg",
+    title: "हिमाचल के इस मंदिर में होते हैं धर्मशाला, जागरण संवाददाता।",
+    paragraph: "धर्मशाला, जागरण संवाददाता। Kangra Famous Temple Baglamukhi Mata...",
+    tags: ["Temple", "Himalaya"],
+    publishDate: "December 01, 2024",
+    author: {
+      name: "John Doe",
+      designation: "Tech Writer",
+      image: "/images/blog/author-01.png",
+    },
+  },
+  {
+    id: 6,
+    image: "/images/blog/blog-3.jpg",
+    title: "हिमाचल के इस मंदिर में होते हैं धर्मशाला, जागरण संवाददाता।",
+    paragraph: "धर्मशाला, जागरण संवाददाता। Kangra Famous Temple Baglamukhi Mata...",
+    tags: ["Temple", "Himalaya"],
+    publishDate: "December 01, 2024",
+    author: {
+      name: "John Doe",
+      designation: "Tech Writer",
+      image: "/images/blog/author-01.png",
+    },
+  },
 ];
 
 export default blogData;

@@ -15,40 +15,40 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user1.svg',
+        name: "Rahul Sharma",
+        profession: 'Software Engineer',
+        comment: 'Pandit Ji’s predictions were incredibly accurate! His deep knowledge of astrology and practical remedies have truly transformed my life.',
+        imgSrc: '/images/testimonial/boy-2.png',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user2.svg',
+        name: " Sneha Mehta ",
+        profession: 'Marketing Manager',
+        comment: 'Pandit Ji’s insights were incredibly accurate, and his remedies worked wonders for me. I was facing uncertainty in my personal life,',
+        imgSrc: '/images/wework/girl-3.png',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user3.svg',
+        name: "Pooja Verma",
+        profession: 'Interior Designer',
+        comment: 'I was facing challenges in my career and personal life, but after consulting Pandit Ji, I found clarity and solutions that actually worked. ',
+        imgSrc: '/images/testimonial/girl-1.png',
     },
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user1.svg',
+        name: "shourya sharma ",
+        profession: 'web - developert',
+        comment: 'Pandit Ji’s readings are not just predictions; they are a roadmap to success and happiness. His remedies are simple yet effective that actually worked. ',
+        imgSrc: '/images/wework/boy-2.png',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user2.svg',
+        name: "Neha Kapoor",
+        profession: 'Chartered Accountant',
+        comment: 'I was struggling with financial issues, but after following Pandit Ji’s advice and remedies, my situation improved drastically.',
+        imgSrc: '/images/testimonial/girl-2.png',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user3.svg',
+        name: "Vikas Malhotra",
+        profession: ' Senior HR Manager',
+        comment: 'Pandit Ji’s knowledge and intuition are remarkable. He provided me with insights that no one else could  I highly recommend his services.',
+        imgSrc: '/images/testimonial/boy-3.png',
     },
 ]
 
@@ -106,8 +106,8 @@ export default class MultipleItems extends Component {
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 '>
 
                     <div className="text-center">
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-3">See what others are saying.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-50 lg:mr-48 my-4">See what others are saying.</h3>
+                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-3 animate-fade-in-up hover:scale-105 transition-transform duration-300">See what others are saying.</h3>
+                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-50 lg:mr-48 my-4 animate-fade-in-down hover:scale-105 transition-transform duration-300">See what others are saying.</h3>
                     </div>
 
 

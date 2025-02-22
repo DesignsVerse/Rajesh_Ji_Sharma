@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import { Disclosure } from '@headlessui/react';
 import Link from 'next/link';
 import React from 'react';
-import { Bars3Icon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Contactusform from './Contactus';
@@ -19,74 +19,79 @@ const navigation: NavigationItem[] = [
     { name: 'FAQ', href: '#faq-section', current: false },
     { name: 'Blog', href: '/blog', current: false },
     { name: 'Testimonial', href: '#testimonial-section', current: false },
-]
+];
 
 function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(' ')
+    return classes.filter(Boolean).join(' ');
 }
 
 const Navbar = () => {
-
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
-        <Disclosure as="nav" className="navbar">
-            <>
-                <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8">
-                    <div className="relative flex h-12 sm:h-20 items-center">
-                        <div className="flex flex-1 items-center sm:justify-between">
-
-                            {/* LOGO */}
-
-                            <div className="flex flex-shrink-0 items-center border-right">
-                                <Link href="#banner" className='text-2xl sm:text-4xl font-semibold text-black'>
-                                    Dummy Astro
+        <Disclosure as="nav" className="navbar bg-white">
+            {({ open }) => (
+                <>
+                    <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8">
+                        <div className="relative flex h-12 sm:h-20 items-center justify-between">
+                            {/* Logo Section */}
+                            <div className="flex items-center">
+                                <Link href="#banner">
+                                    <span className="text-2xl sm:text-4xl font-semibold text-gray-900 hover:text-indigo-600 transition-colors">
+                                        Dummy Astro
+                                    </span>
                                 </Link>
                             </div>
 
-                            {/* LINKS */}
-
-                            <div className="hidden lg:flex items-center border-right ">
-                                <div className="flex justify-end space-x-4">
-                                    {navigation.map((item) => (
-                                        <Link
-                                            key={item.name}
-                                            href={item.href}
-                                            className={classNames(
-                                                item.current ? 'bg-gray-900' : 'navlinks hover:text-black',
-                                                'px-3 py-4 rounded-md text-lg font-normal'
-                                            )}
-                                            aria-current={item.href ? 'page' : undefined}
-                                        >
-                                            {item.name}
-                                        </Link>
-                                    ))}
-                                </div>
-
+                            {/* Desktop Navigation */}
+                            <div className="hidden lg:flex lg:items-center lg:space-x-4">
+                                {navigation.map((item) => (
+                                    <Link
+                                        key={item.name}
+                                        href={item.href}
+                                        className={classNames(
+                                            item.current 
+                                                ? 'bg-indigo-600 text-white' 
+                                                : 'text-gray-700 hover:bg-indigo-50 hover:text-indigo-600',
+                                            'px-3 py-4 rounded-md text-lg font-normal transition-all duration-200'
+                                        )}
+                                        aria-current={item.current ? 'page' : undefined}
+                                    >
+                                        {item.name}
+                                    </Link>
+                                ))}
                             </div>
-                            <Contactusform />
+
+                            {/* Contact Button */}
+                            <div className="hidden lg:flex lg:items-center">
+                                <Contactusform />
+                            </div>
+
+                            {/* Mobile Menu Button */}
+                            <div className="flex lg:hidden">
+                                <Disclosure.Button
+                                    className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none"
+                                    onClick={() => setIsOpen(!isOpen)}
+                                >
+                                    <span className="sr-only">Open main menu</span>
+                                    {open ? (
+                                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                                    ) : (
+                                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                                    )}
+                                </Disclosure.Button>
+                            </div>
                         </div>
-
-
-                        {/* DRAWER FOR MOBILE VIEW */}
-
-                        {/* DRAWER ICON */}
-
-                        <div className='block lg:hidden'>
-                            <Bars3Icon className="block h-6 w-6" aria-hidden="true" onClick={() => setIsOpen(true)} />
-                        </div>
-
-                        {/* DRAWER LINKS DATA */}
-
-                        <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-                            <Drawerdata />
-                        </Drawer>
-
                     </div>
-                </div>
-            </>
+
+                    {/* Mobile Drawer */}
+                    <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+                        <Drawerdata />
+                    </Drawer>
+                </>
+            )}
         </Disclosure>
-    )
-}
+    );
+};
 
 export default Navbar;
