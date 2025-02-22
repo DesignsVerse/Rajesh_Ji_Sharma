@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const SingleBlog = ({ blog }: { blog: Blog }) => {
-  const { id, image, title, publishDate } = blog;
+  const { id, image, title, publishDate   } = blog;
   const defaultImage = "/images/default-blog.jpg"; // Default image if empty
 
   return (
