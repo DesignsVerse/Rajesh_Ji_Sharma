@@ -21,7 +21,7 @@ const Dedicated = () => {
                             Discover the ancient wisdom of Vedic astrology with our expert panditji.
                         </h2>
                         <p className="font-medium text-lightblack text-2xl mt-5 text-center lg:text-start">
-                            At (Dummmy Astro), we are dedicated to providing authentic astrological guidance rooted in Vedic traditions. Our experienced panditji has years of expertise in Jyotish Shastra, helping individuals navigate life's challenges and opportunities.
+                            At (Dummmy Astro), we are dedicated to providing authentic astrological guidance rooted in Vedic traditions. Our experienced panditji has years of expertise in Jyotish Shastra, helping individuals navigate life&apos;s challenges and opportunities.
                         </p>
                         <p className="text-2xl font-semibold mt-12 lg:ml-32 preline text-center lg:text-start">
                             Pandit Ji Name
