@@ -4,8 +4,8 @@ type Author = {
     designation: string;
   };
   
-  export type ServicePostType = {
-    id: string;
+  export type Services = {
+    id:1 ;
     title: string;
     image: string;
     author?: string;
