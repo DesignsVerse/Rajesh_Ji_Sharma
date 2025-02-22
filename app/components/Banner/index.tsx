@@ -13,7 +13,7 @@ const Banner = () => {
                     </div>
                     <div className="py-3 text-center lg:text-start">
                         <h1 className='text-6xl lg:text-80xl font-bold  animate-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-black'>
-                            Transform Your<br /> Life's Journey<br />
+                            Transform Your<br /> Life&rsquo;s Journey<br />
                         </h1>
                     </div>
                     <div className='my-7 text-center lg:text-start'>
@@ -31,7 +31,7 @@ const Banner = () => {
                         alt="hero-image" 
                         width={700}
                         height={400}
-                        className="object-contain ml-auto rounded-[30px]  hover:scale-105 transition-transform duration-300 animate-fade-in-left hover:shadow-xl"
+                        className="object-contain ml-auto rounded-[30px] hover:scale-105 transition-transform duration-300 animate-fade-in-left hover:shadow-xl"
                         priority
                     />
                 </div>
