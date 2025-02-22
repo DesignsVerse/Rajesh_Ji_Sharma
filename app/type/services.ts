@@ -4,10 +4,20 @@ type Author = {
     designation: string;
   };
   
-  export type Services = {
-    id: number;
+  export type ServicePostType = {
+    id: string;
     title: string;
-    paragraph: string;
-    // image: string;
+    image: string;
+    author?: string;
+    excerpt?: string;
+    heading1: string;
+    paragraph1: string;
+    heading2: string;
+    paragraph2: string;
+    heading3: string;
+    paragraph3: string;
+    finalHeading: string;
+    finalParagraph: string;
   };
+  
   
