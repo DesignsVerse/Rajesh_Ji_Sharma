@@ -14,10 +14,10 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'About Us', href: '#aboutus-section', current: false },
+    { name: 'Home', href: '#banner', current: false },
     { name: 'Services', href: '/services', current: false },
     { name: 'FAQ', href: '#faq-section', current: false },
-    { name: 'Blog', href: '/blog', current: false },
+    { name: 'Blog', href:  '/blog', current: false },
     { name: 'Testimonial', href: '#testimonial-section', current: false },
 ];
 
@@ -38,7 +38,7 @@ const Navbar = () => {
                             <div className="flex items-center">
                                 <Link href="#banner">
                                     <span className="text-2xl sm:text-4xl font-semibold text-gray-900 hover:text-indigo-600 transition-colors">
-                                        Dummy Astro
+                                        Astro Rajesh
                                     </span>
                                 </Link>
                             </div>
@@ -51,8 +51,8 @@ const Navbar = () => {
                                         href={item.href}
                                         className={classNames(
                                             item.current 
-                                                ? 'bg-indigo-600 text-white' 
-                                                : 'text-gray-700 hover:bg-indigo-50 hover:text-indigo-600',
+                                                ? 'bg-[#A3C3E1] text-white'  // Set the active link background to a blue color
+                                                : 'text-gray-700 hover:bg-[#90B9E9] hover:text-white',  // Light blue on hover
                                             'px-3 py-4 rounded-md text-lg font-normal transition-all duration-200'
                                         )}
                                         aria-current={item.current ? 'page' : undefined}

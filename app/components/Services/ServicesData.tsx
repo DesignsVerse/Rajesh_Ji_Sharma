@@ -3,88 +3,87 @@ import { Services } from "@/app/type/services";
 const servicesData: Services[] = [
   {
     id: 1,
-    title: "शत्रु बाधा निवारण पूजा",
+    title: "Personalized Astrology Consultation",
     paragraph:
-      "माँ बगलामुखी को शत्रु नाशिनी देवी माना जाता है। उनकी विशेष पूजा से शत्रुओं से रक्षा, नकारात्मक ऊर्जा का नाश, और जीवन में शांति एवं सुरक्षा प्राप्त होती है। यदि आप किसी विरोध, मानसिक तनाव, या शत्रु बाधा का सामना कर रहे हैं, तो माँ बगलामुखी पंडित नंदकिशोर जोशी के मार्गदर्शन में करवाई गई पूजा से इनका समाधान संभव है। पंडित नंदकिशोर जोशी जी की विधि से संपन्न अनुष्ठान आपके जीवन में सकारात्मक ऊर्जा और सफलता लेकर आएगा।",
-    image: "/images/services/1.jpg",
-  
+      "Receive a detailed astrological reading that provides insights into your personality, strengths, and challenges based on your birth chart. This service helps you understand your life's path and make informed decisions for your future.",
+    image: "https://images.unsplash.com/photo-1547322135-52ab263fd4f6", // Updated placeholder image
   },
   {
     id: 2,
-    title: "अनुष्ठान पूजा",
+    title: "Career Astrology Consultation",
     paragraph:
-      "अनुष्ठान पूजा एक विस्तृत आध्यात्मिक प्रक्रिया है, जो सुख-शांति, सफलता, नकारात्मक ऊर्जा निवारण, और विशेष कार्यों की सिद्धि के लिए की जाती है। यह पूजा देवी-देवताओं की कृपा प्राप्त करने हेतु की जाती है। माँ बगलामुखी नंदकिशोर जोशी के मार्गदर्शन में संपन्न अनुष्ठान विशेष रूप से शत्रु बाधा निवारण, व्यवसाय में सफलता और आध्यात्मिक उन्नति के लिए प्रभावी माना जाता है। नंदकिशोर जोशी जी की पूजा विधि से आप माँ बगलामुखी की कृपा प्राप्त कर सकते हैं।",
-    image: "/images/services/2.jpg",
+      "Explore how your astrological profile influences your career choices and opportunities. This consultation will provide guidance on which paths may lead to fulfillment and success based on your natal chart.",
+    image: "https://images.unsplash.com/photo-1504384332028-9c8b9e5c2262", // Updated placeholder image
   },
   {
     id: 3,
-    title: "सम्मोहन तंत्र पूजा",
+    title: "Relationship Compatibility Analysis",
     paragraph:
-      "सम्मोहन तंत्र पूजा विशेष रूप से व्यक्तित्व को प्रभावशाली बनाने, लोगों को आकर्षित करने और अपनी बात का प्रभाव जमाने के लिए की जाती है। यह पूजा मनःस्थिति को मजबूत करने और आत्मविश्वास बढ़ाने में सहायक होती है। पंडित नंदकिशोर जोशी जी के मार्गदर्शन में की गई सम्मोहन तंत्र पूजा से आप अपनी मानसिक शक्ति और आत्मविश्वास को नए स्तर तक बढ़ा सकते हैं। नंदकिशोर जोशी जी की विशेष पूजा विधि से व्यक्तित्व में परिवर्तन लाकर आप अपनी जीवन में सफलता और शांति प्राप्त कर सकते हैं।",
-    image: "/images/services/3.jpg",
+      "Understand the dynamics of your relationships through compatibility analysis based on astrology. This service evaluates the astrological charts of partners to reveal insights into strengths and potential challenges in the relationship.",
+    image: "https://images.unsplash.com/photo-1484062503524-a44bc28bd6b0", // Updated placeholder image
   },
   {
     id: 4,
-    title: "लक्ष्मी पूजा",
+    title: "Numerology Analysis",
     paragraph:
-      "माँ लक्ष्मी की यह पूजा धन, समृद्धि और आर्थिक स्थिरता के लिए की जाती है। यह पूजा व्यक्ति के जीवन में धन आगमन, व्यापार में वृद्धि और वित्तीय बाधाओं को दूर करने में सहायता करती है। माँ बगलामुखी नंदकिशोर जोशी जी के मार्गदर्शन में की गई पूजा से आपको न केवल धन की प्राप्ति होती है, बल्कि पंडित नंदकिशोर जोशी जी के आशीर्वाद से आपके व्यापार और वित्तीय स्थिति में भी सुधार आता है। नंदकिशोर जोशी जी की पूजा विधि से आप माँ लक्ष्मी की कृपा प्राप्त कर सकते हैं।",
-    image: "/images/services/4.jpg",
+      "Dive into the world of numerology to uncover the meanings behind your numbers. This analysis will provide insights into your personality, life path, and destiny based on your birth date and name.",
+    image: "https://images.unsplash.com/photo-1573497019434-01a5111fbb39", // Updated placeholder image
   },
   {
     id: 5,
-    title: "विद्वेषण पूजा",
+    title: "Astrology for Health and Wellness",
     paragraph:
-      "विद्वेषण पूजा उन लोगों के लिए की जाती है जो अपने शत्रुओं से मुक्ति और उनसे छुटकारा पाना चाहते हैं। यह पूजा विरोधियों के नकारात्मक प्रभाव को नष्ट करने और स्वयं को सुरक्षित रखने में सहायक होती है। माँ बगलामुखी पंडित नंदकिशोर जोशी जी के मार्गदर्शन में की गई विद्वेषण पूजा से आप अपने शत्रुओं से मुक्ति प्राप्त कर सकते हैं। नंदकिशोर जोशी जी की विधि से न केवल शत्रु बाधाओं का नाश होता है, बल्कि आप अपने जीवन में शांति और सुरक्षा भी अनुभव कर सकते हैं।",
-    image: "/images/services/5.jpg",
+      "Discover how astrological influences can affect your health and well-being. This consultation helps identify potential health challenges and favorable periods for wellness activities based on your astrological chart.",
+    image: "https://images.unsplash.com/photo-1589152432114-4c2d263408c7", // Updated placeholder image
   },
   {
     id: 6,
-    title: "तंत्र पूजा",
+    title: "Astrology for Financial Guidance",
     paragraph:
-      "तंत्र पूजा एक रहस्यमयी साधना है, जो आध्यात्मिक शक्ति, तांत्रिक सिद्धि, और विशेष इच्छाओं की पूर्ति के लिए की जाती है। यह पूजा विशेष रूप से ऊर्जा संतुलन, शक्ति वृद्धि और आत्मिक जागरूकता के लिए की जाती है। माँ बगलामुखी नंदकिशोर जोशी जी के मार्गदर्शन में की गई तंत्र पूजा से आप अपनी आत्मिक शक्ति को जागृत कर सकते हैं। पंडित नंदकिशोर जोशी जी की विशेष पूजा विधि से आप ऊर्जा संतुलन और आत्मिक उन्नति पा सकते हैं।",
-    image: "/images/services/6.jpg",
+      "Explore the astrological factors impacting your financial situation. This consultation provides guidance on best financial practices and timing for investments based on astrological insights.",
+    image: "https://images.unsplash.com/photo-1588906040557-0914c0e6e26d", // Updated placeholder image
   },
   {
     id: 7,
-    title: "वशीकरण पूजा",
+    title: "Numerology for Personal Development",
     paragraph:
-      "वशीकरण पूजा का उद्देश्य संबंधों में मधुरता, प्रेम, और इच्छित व्यक्ति पर सकारात्मक प्रभाव डालना होता है। यह पूजा वैवाहिक जीवन, प्रेम संबंधों और आपसी समझ बढ़ाने के लिए अत्यधिक प्रभावी मानी जाती है। माँ बगलामुखी पंडित नंदकिशोर जोशी जी के मार्गदर्शन में की गई वशीकरण पूजा से आप अपने रिश्तों में प्यार और समझ बढ़ा सकते हैं। नंदकिशोर जोशी जी की पूजा विधि से न केवल आपके संबंधों में मधुरता आती है, बल्कि आप अपने जीवन साथी या प्रेमी के साथ गहरी समझ और सामंजस्य बना सकते हैं।",
-    image: "/images/services/7.jpg",
+      "Utilize numerology to identify personal strengths and areas for growth. This service focuses on creating a plan for personal and professional development based on your unique numerological profile.",
+    image: "https://images.unsplash.com/photo-1593642632885-9e9b67b71793", // Updated placeholder image
   },
   {
     id: 8,
-    title: "उच्चाटन पूजा",
+    title: "Electional Astrology Consultation",
     paragraph:
-      "यदि कोई नकारात्मक व्यक्ति, शत्रु, या बाधक तत्व आपके जीवन में परेशानियाँ खड़ी कर रहा है, तो यह पूजा उन्हें दूर करने में सहायक होती है। उच्चाटन पूजा से अनचाहे प्रभाव समाप्त होते हैं और जीवन में शांति व स्थिरता आती है। माँ बगलामुखी पंडित नंदकिशोर जोशी जी के मार्गदर्शन में की गई उच्चाटन पूजा से आप नकारात्मक प्रभावों से मुक्ति पा सकते हैं। नंदकिशोर जोशी जी की पूजा विधि से आपके जीवन में शांति, सुरक्षा और स्थिरता बनी रहती है।",
-    image: "/images/services/8.jpg",
+      "Find the most auspicious times for important events in your life, such as marriage, starting a business, or any significant undertaking. This consultation helps you choose the best timing based on astrological insights.",
+    image: "https://images.unsplash.com/photo-1521747116042-5a810fda9664", // Updated placeholder image
   },
   {
     id: 9,
-    title: "शत्रु नाशक पूजा",
+    title: "Astrological Forecasting",
     paragraph:
-      "माँ बगलामुखी की यह पूजा विशेष रूप से शत्रुओं, विरोधियों और नकारात्मक शक्तियों के प्रभाव को समाप्त करने के लिए की जाती है। यह पूजा शत्रुओं के दुष्प्रभाव को निष्क्रिय कर, जीवन में विजय, शांति और सुरक्षा प्रदान करती है। माँ बगलामुखी पंडित नंदकिशोर जोशी जी के मार्गदर्शन में की गई पूजा से आप शत्रु बाधाओं से मुक्ति पा सकते हैं। नंदकिशोर जोशी जी की पूजा विधि से आपके जीवन में शांति और सुरक्षा का वास होता है।",
-    image: "/images/services/9.jpg",
+      "Receive predictions and insights into upcoming life events based on transits and progressions in your astrological chart. This consultation helps you prepare for future opportunities and challenges.",
+    image: "https://images.unsplash.com/photo-1559535677-071de198ebc5", // Updated placeholder image
   },
   {
     id: 10,
-    title: "आकर्षण पूजा",
+    title: "Astrology and Spiritual Growth",
     paragraph:
-      "आकर्षण पूजा विशेष रूप से व्यक्तित्व, प्रभाव और मान-सम्मान बढ़ाने के लिए की जाती है। यह पूजा जीवन में प्रेम, सौभाग्य, और इच्छित व्यक्ति या परिस्थितियों को अपनी ओर आकर्षित करने में सहायक होती है। माँ बगलामुखी पंडित नंदकिशोर जोशी जी के मार्गदर्शन में की गई आकर्षण पूजा से आप अपने व्यक्तित्व को प्रभावशाली बना सकते हैं और जीवन में सकारात्मक बदलाव ला सकते हैं। नंदकिशोर जोशी जी की पूजा विधि से आपके जीवन में प्रेम, सौभाग्य और समृद्धि का वास होगा।",
-    image: "/images/services/10.jpg",
+      "Explore the connections between astrology and spiritual development. This consultation focuses on how astrological insights can help you on your spiritual journey and personal transformation.",
+    image: "https://images.unsplash.com/photo-1602054212534-fc3b1faf77f5", // Updated placeholder image
   },
   {
     id: 11,
-    title: "हवन पूजा",
+    title: "Compatibility and Numerology Consultation",
     paragraph:
-      "हवन पूजा एक पवित्र अग्नि अनुष्ठान है, जिसमें वैदिक मंत्रों के माध्यम से नकारात्मक ऊर्जा को दूर किया जाता है और सकारात्मकता, शुद्धि और सुरक्षा प्राप्त होती है। यह पूजा शत्रु निवारण, सफलता, और सुख-समृद्धि के लिए की जाती है। नंदकिशोर जोशी जी के मार्गदर्शन में की गई हवन पूजा से आप शत्रु बाधाओं से मुक्ति पा सकते हैं और अपने जीवन में शांति एवं समृद्धि का अनुभव कर सकते हैं।",
-    image: "/images/services/11.jpg",
+      "Combine the insights of both astrology and numerology to analyze relationship compatibility. This service offers a comprehensive view of how numbers and stars interact in your relationships.",
+    image: "https://images.unsplash.com/photo-1607759657972-145346456b70", // Updated placeholder image
   },
   {
     id: 12,
-    title: "हवन पूजा",
+    title: "Comprehensive Astrology and Numerology Package",
     paragraph:
-      "हवन पूजा एक पवित्र अग्नि अनुष्ठान है, जिसमें वैदिक मंत्रों के माध्यम से नकारात्मक ऊर्जा को दूर किया जाता है और सकारात्मकता, शुद्धि और सुरक्षा प्राप्त होती है। यह पूजा शत्रु निवारण, सफलता, और सुख-समृद्धि के लिए की जाती है। नंदकिशोर जोशी जी के मार्गदर्शन में की गई हवन पूजा से शत्रु बाधाओं से मुक्ति प्राप्त होती है और जीवन में शांति और समृद्धि का वास होता है।",
-    image: "/images/services/12.jpg",
+      "Opt for a complete package that includes both astrology and numerology consultations. This service provides a holistic approach to understanding yourself and your life path through both disciplines.",
+    image: "https://images.unsplash.com/photo-1525113341347-7afe33c1f769", // Updated placeholder image
   },
 ];
 
