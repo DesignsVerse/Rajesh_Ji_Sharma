@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Slider from "react-slick";
 import React, { Component } from "react";
 import { StarIcon } from '@heroicons/react/24/solid';
@@ -16,44 +16,43 @@ interface DataType {
 const postData: DataType[] = [
     {
         name: "Rahul Sharma",
-        profession: 'Software Engineer',
-        comment: 'Pandit Ji’s predictions were incredibly accurate! His deep knowledge of astrology and practical remedies have truly transformed my life.',
-        imgSrc: '/images/testimonial/boy-2.png',
+        profession: "Business Owner",
+        comment: "Astro Rajesh Sharma's predictions were incredibly accurate! His guidance helped me overcome financial obstacles and make better business decisions. Highly recommended!",
+        imgSrc: "/images/testimonial/boy-2.png",
     },
     {
-        name: " Sneha Mehta ",
-        profession: 'Marketing Manager',
-        comment: 'Pandit Ji’s insights were incredibly accurate, and his remedies worked wonders for me. I was facing uncertainty in my personal life,',
-        imgSrc: '/images/wework/girl-3.png',
+        name: "Sneha Mehta",
+        profession: "Marketing Manager",
+        comment: "I was facing uncertainty in my personal life, and Pandit Ji’s insights gave me much-needed clarity. His remedies were simple yet effective. Thank you for your guidance!",
+        imgSrc: "/images/testimonial/girl-3.png",
     },
     {
         name: "Pooja Verma",
-        profession: 'Interior Designer',
-        comment: 'I was facing challenges in my career and personal life, but after consulting Pandit Ji, I found clarity and solutions that actually worked. ',
-        imgSrc: '/images/testimonial/girl-1.png',
+        profession: "Interior Designer",
+        comment: "I was struggling in my career, but after consulting Astro Rajesh Sharma, I found new opportunities and success. His advice truly changed my life!",
+        imgSrc: "/images/testimonial/girl-1.png",
     },
     {
-        name: "shourya sharma ",
-        profession: 'web - developert',
-        comment: 'Pandit Ji’s readings are not just predictions; they are a roadmap to success and happiness. His remedies are simple yet effective that actually worked. ',
-        imgSrc: '/images/wework/boy-2.png',
+        name: "Shourya Sharma",
+        profession: "Software Engineer",
+        comment: "Pandit Ji’s readings are not just predictions; they are life-changing insights. His remedies helped me find peace and success in both personal and professional life.",
+        imgSrc: "/images/wework/boy-2.png",
     },
     {
         name: "Neha Kapoor",
-        profession: 'Chartered Accountant',
-        comment: 'I was struggling with financial issues, but after following Pandit Ji’s advice and remedies, my situation improved drastically.',
-        imgSrc: '/images/testimonial/girl-2.png',
+        profession: "Chartered Accountant",
+        comment: "I was facing continuous financial struggles, but after following Astro Rajesh Sharma’s remedies, I saw a significant improvement. His knowledge of astrology is remarkable!",
+        imgSrc: "/images/testimonial/girl-2.png",
     },
     {
         name: "Vikas Malhotra",
-        profession: ' Senior HR Manager',
-        comment: 'Pandit Ji’s knowledge and intuition are remarkable. He provided me with insights that no one else could  I highly recommend his services.',
-        imgSrc: '/images/testimonial/boy-3.png',
+        profession: "Senior HR Manager",
+        comment: "Astro Rajesh Sharma's deep astrological knowledge helped me make the right decisions in my career and personal life. His predictions were spot on, and his remedies worked wonders!",
+        imgSrc: "/images/testimonial/boy-3.png",
     },
-]
+];
 
 // CAROUSEL SETTINGS
-
 
 export default class MultipleItems extends Component {
 
@@ -62,12 +61,11 @@ export default class MultipleItems extends Component {
             dots: false,
             infinite: true,
             slidesToShow: 3,
-            // centerMode: true,
             slidesToScroll: 2,
             arrows: false,
-            autoplay: false,
+            autoplay: true, // Enable autoplay
             speed: 500,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 2000, // Time between slides
             cssEase: "linear",
             responsive: [
                 {
@@ -100,16 +98,13 @@ export default class MultipleItems extends Component {
             ]
         };
 
-
         return (
-            <div className="bg-testimonial pt-40 pb-32 lg:py-32" id="testimonial-section">
-                <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 '>
+            <div className="bg-testimonial pt-40 pb-2 lg:py-2" id="testimonial-section">
+                <div className='mx-auto max-w-7xl sm:py-4 lg:px-8'>
 
                     <div className="text-center">
                         <h3 className="text-4xl sm:text-6xl font-bold text-black my-3 animate-fade-in-up hover:scale-105 transition-transform duration-300">See what others are saying.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-50 lg:mr-48 my-4 animate-fade-in-down hover:scale-105 transition-transform duration-300">See what others are saying.</h3>
                     </div>
-
 
                     <Slider {...settings}>
                         {postData.map((items, i) => (
@@ -121,7 +116,7 @@ export default class MultipleItems extends Component {
                                     <div className="flex justify-between">
                                         <div>
                                             <h3 className='text-base font-medium pt-4 pb-2'>{items.name}</h3>
-                                            <h3 className='text-xs font-medium  pb-2 opacity-50'>{items.profession}</h3>
+                                            <h3 className='text-xs font-medium pb-2 opacity-50'>{items.profession}</h3>
                                         </div>
                                         <div className="flex">
                                             <StarIcon width={20} className="star" />
@@ -137,7 +132,6 @@ export default class MultipleItems extends Component {
                     </Slider>
                 </div>
             </div>
-
         );
     }
 }

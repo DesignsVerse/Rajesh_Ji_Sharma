@@ -21,7 +21,7 @@ export default function Home() {
       <Dedicated />
       <Aboutus />
       {/* <Digital />
-      <Beliefs /> */}
+      // <Beliefs /> */}
       <Wework />
       <Ourteam />
       {/* <Featured /> */}
