@@ -6,6 +6,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Contactusform from './Contactus';
+import Image from 'next/image';
 
 interface NavigationItem {
     name: string;
@@ -32,14 +33,16 @@ const Navbar = () => {
         <Disclosure as="nav" className="navbar bg-white">
             {({ open }) => (
                 <>
-                    <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8">
+                    <div className="mx-auto max-w-100% p-3 md:p-4 lg:px-8">
                         <div className="relative flex h-12 sm:h-20 items-center justify-between">
                             {/* Logo Section */}
                             <div className="flex items-center">
                                 <Link href="#banner">
-                                    <span className="text-2xl sm:text-4xl font-semibold text-gray-900 hover:text-indigo-600 transition-colors">
+                                    {/* <span className="text-2xl sm:text-4xl font-semibold text-gray-900 hover:text-indigo-600 transition-colors">
                                         Astro Rajesh
-                                    </span>
+                                    </span> */}
+                                    <Image src="/images/manage/logo.png" width={200} height={200} alt="" className=''/>
+ 
                                 </Link>
                             </div>
 

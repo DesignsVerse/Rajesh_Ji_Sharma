@@ -35,7 +35,7 @@ const SingleServices = ({ services }: { services: Services }) => {
 
         {/* Buttons - View More & Book Now */}
         <div className="flex justify-between items-center mt-4">
-          <Link href={`/services/${id}`} className="text-[#d55f26] font-semibold hover:underline">
+          <Link href={`/services/${id}`} className="text-[#95BCE7] font-semibold hover:underline">
           View More
           </Link>
           <a
@@ -43,7 +43,7 @@ const SingleServices = ({ services }: { services: Services }) => {
 " // Yaha apna WhatsApp number dal dena
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#d55f26] text-white px-4 py-2 rounded-lg shadow-md font-semibold flex items-center gap-2 hover:scale-105 hover:shadow-lg transition duration-300"
+            className="bg-[#95BCE7] text-white px-4 py-2 rounded-lg shadow-md font-semibold flex items-center gap-2 hover:scale-105 hover:shadow-lg transition duration-300"
           >
             {/* 📲  */}Book Now
           </a>

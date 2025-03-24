@@ -24,7 +24,7 @@ const postData: DataType[] = [
         name: "Sneha Mehta",
         profession: "Marketing Manager",
         comment: "I was facing uncertainty in my personal life, and Pandit Ji’s insights gave me much-needed clarity. His remedies were simple yet effective. Thank you for your guidance!",
-        imgSrc: "/images/wework/girl-3.png",
+        imgSrc: "/images/testimonial/girl-3.png",
     },
     {
         name: "Pooja Verma",
