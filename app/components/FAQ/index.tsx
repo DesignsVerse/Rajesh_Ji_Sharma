@@ -54,6 +54,7 @@ const FAQ = () => {
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-80">
                                     Numerology is the study of **numbers and their mystical influence on human life**. It helps in choosing favorable names, business decisions, and predicting life events. Astro Rajesh Sharma provides precise numerological guidance to enhance your destiny.
                                 </Disclosure.Panel>
+                                
                             </>
                         )}
                     </Disclosure>
@@ -65,7 +66,7 @@ const FAQ = () => {
                         {({ open }) => (
                             <>
                                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                                    <span>How accurate are Astro Rajesh Sharma's predictions?</span>
+                                    <span>How accurate are Astro Rajesh Sharma &apos; predictions?</span>
                                     <ChevronUpIcon className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-500`} />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-80">
