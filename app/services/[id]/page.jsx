@@ -3,22 +3,19 @@ import { notFound } from "next/navigation";
 import data from "@/app/data/servicedata.json";
 import Link from "next/link";
 
-// Fetch metadata for SEO
 export async function generateMetadata({ params }) {
   const post = data.find((post) => post.id === params.id);
   if (!post) return { title: "Service Not Found" };
 
   return {
     title: post.title,
-    description: post.excerpt,
+    description: post.description,
   };
 }
 
 export default async function ServicePost({ params }) {
   const post = data.find((post) => post.id === params.id);
-  if (!post) {
-    return notFound();
-  }
+  if (!post) return notFound();
 
   return (
     <main className="mt-[140px] max-w-7xl mx-auto p-6">
@@ -29,30 +26,40 @@ export default async function ServicePost({ params }) {
           <h1 className="text-4xl font-bold text-left">{post.title}</h1>
           <p className="text-gray-500 pl-1 text-left">{post.author}</p>
 
-          {/* Image Section instead of Video */}
+          {/* Image Section */}
           {post.image && (
             <div className="relative mt-6 w-full rounded-lg overflow-hidden">
               <Image 
                 src={post.image} 
-                alt="image" 
-                width={800}  // ✅ Added proper width
-                height={400} // ✅ Added proper height
+                alt={post.title} 
+                width={800} 
+                height={400} 
                 className="w-full h-[400px] object-cover rounded-lg"
-                unoptimized // ✅ Optional for local images
+                unoptimized 
               />
             </div>
           )}
 
-          {/* Service Description */}
-          <article className="prose lg:prose-xl justify-text text-left mt-6">
-            <div className="text-justify" dangerouslySetInnerHTML={{ __html: post.content }} />
-          </article>
-          
+          {/* Intro Paragraph */}
+          {post.paragraph && (
+            <p className="text-lg text-gray-700 mt-6">{post.paragraph}</p>
+          )}
+
+          {/* Sections */}
+          {post.sections && post.sections.length > 0 && (
+            <div className="mt-6 space-y-6">
+              {post.sections.map((section, index) => (
+                <div key={index} className="bg-gray-100 p-4 rounded-lg shadow">
+                  <h2 className="text-2xl font-semibold">{section.heading}</h2>
+                  <p className="mt-2 text-gray-700">{section.content}</p>
+                </div>
+              ))}
+            </div>
+          )}
         </section>
 
         {/* Sidebar */}
-        <aside className="w-full lg:w-1/3 p-5 pt-24 rounded-lg shadow-md order-2 lg:order-none">
-          
+        <aside className="w-full lg:w-1/3 p-5 pt-24 rounded-lg shadow-md">
           {/* All Services */}
           <h2 className="text-xl font-semibold mb-4">All Services</h2>
           <ul className="space-y-2">
@@ -79,7 +86,6 @@ export default async function ServicePost({ params }) {
               <p className="text-sm text-white">मेल करें: <span className="text-black">baglamukhisadhnapeeth@gmail.com</span></p>
             </div>
           </div>
-
         </aside>
       </div>
     </main>
