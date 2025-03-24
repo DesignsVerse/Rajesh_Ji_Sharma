@@ -15,7 +15,7 @@ const Service = () => {
             Discover how the ancient arts of astrology and numerology can guide you in your journey. 
             Our expert services provide personalized insights that help you understand your destiny, 
             uncover hidden potentials, and make informed decisions. Explore our offerings to find the 
-            guidance you need to navigate life's challenges with confidence.
+            guidance you need to navigate life &apos; challenges with confidence.
           </p>
         </div>
 
