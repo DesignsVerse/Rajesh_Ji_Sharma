@@ -4,7 +4,7 @@ const index = () => {
     return (
         <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 m-32'>
             <h2 className="text-15xl sm:text-65xl font-bold text-center hover:scale-105 transition-transform duration-300">Recognitions & Achievements 🌟.</h2>
-            <h4 className="text-l font-medium text-center pt-10 animate-fade-in-up hover:scale-105 transition-transform duration-300">Astro Rajesh Sharma's dedication and expertise in Astrology & Numerology have earned him prestigious awards and honors in the field of Vedic sciences. His accurate predictions, transformative guidance, and commitment to helping people have been recognized by renowned institutions and spiritual organizations.</h4>
+            <h4 className="text-l font-medium text-center pt-10 animate-fade-in-up hover:scale-105 transition-transform duration-300">Astro Rajesh Sharma &apos; dedication and expertise in Astrology & Numerology have earned him prestigious awards and honors in the field of Vedic sciences. His accurate predictions, transformative guidance, and commitment to helping people have been recognized by renowned institutions and spiritual organizations.</h4>
             {/* <h2 className="text-2xl font-medium text-center pt-10 animate-pulse hover:scale-105 transition-transform duration-300">&ldquo;Pandit Ji Rajesh has received so many awards!&rdquo; <br /> Jyotish Ratna Award,
                 Navagraha Jyotish Puraskar,
                 Divya Drishti Award.</h2> */}
