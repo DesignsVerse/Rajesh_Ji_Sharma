@@ -53,7 +53,7 @@ export default function GalleryPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 text-center">
           <p className="text-sm text-yellow-400">
-            "The stars incline, they do not compel." - Ancient Astrological Wisdom
+          &quot;The stars incline, they do not compel.&quot; - Ancient Astrological Wisdom
           </p>
           <div className="flex justify-center gap-6 mt-4">
             <a href="#" className="text-white hover:text-yellow-400">
