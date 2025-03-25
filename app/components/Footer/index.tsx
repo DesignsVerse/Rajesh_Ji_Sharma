@@ -120,10 +120,10 @@ const Footer = () => {
               <h3 className='text-center md:text-start text-offwhite text-lg'>@2025 - All Rights Reserved by Astro Rajesh, Created by DesignsVerse</h3>
             </div>
             <div className="flex justify-center md:justify-end">
-              <Link href="/privacy-policy">
+              <Link href="/privacy">
                 <h3 className="text-offwhite pr-6">Privacy policy</h3>
               </Link>
-              <Link href="/terms-conditions">
+              <Link href="/terms">
                 <h3 className="text-offwhite pl-6 border-solid border-l border-footer">Terms & conditions</h3>
               </Link>
             </div>
