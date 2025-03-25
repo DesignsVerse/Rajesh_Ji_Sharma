@@ -67,7 +67,7 @@ const TermsAndConditions = () => {
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b pb-2">
                 7. Disclaimer of Warranties
               </h2>
-              <p>Our website and services are provided "as is" without warranties of any kind, either express or implied. We do not warrant that the website will be error-free or uninterrupted.</p>
+              <p>Our website and services are provided &quot;as is&quot; without warranties of any kind, either express or implied. We do not warrant that the website will be error-free or uninterrupted.</p>
             </section>
             
             <section>

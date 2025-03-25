@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b pb-2">
                 1. Introduction
               </h2>
-              <p>Welcome to [Your Website Name]. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website and services.</p>
+              <p>Welcome to [Your Website Name]. This Privacy Policy explains how we collect, use, and protect your personal information when you&apos;re using our website and services.</p>
             </section>
             
             <section>
