@@ -72,7 +72,7 @@ const PrivacyPolicy = () => {
             
             <section>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 border-b pb-2">
-                6. Children's Privacy
+                6. Children&apos;ss Privacy
               </h2>
               <p>Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children.</p>
             </section>
