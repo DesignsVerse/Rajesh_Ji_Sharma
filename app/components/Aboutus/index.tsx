@@ -30,7 +30,7 @@ const Aboutdata: datatype[] = [
         imgSrc: "/images/aboutus/imgThree.svg",
         paragraph: 'Numbers hold the key to your destiny, influencing your personality, career, relationships, and success. Through expert numerological analysis.',
         link: 'Learn more',
-        href: "/services/numerology"
+        href: "/services/7"
     },
 ]
 

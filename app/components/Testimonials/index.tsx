@@ -24,7 +24,7 @@ const postData: DataType[] = [
         name: "Sneha Mehta",
         profession: "Marketing Manager",
         comment: "I was facing uncertainty in my personal life, and Pandit Ji’s insights gave me much-needed clarity. His remedies were simple yet effective. Thank you for your guidance!",
-        imgSrc: "/images/testimonial/girl-3.png",
+        imgSrc: "/images/testimonial/girl-3.avif",
     },
     {
         name: "Pooja Verma",
@@ -36,7 +36,7 @@ const postData: DataType[] = [
         name: "Shourya Sharma",
         profession: "Software Engineer",
         comment: "Pandit Ji’s readings are not just predictions; they are life-changing insights. His remedies helped me find peace and success in both personal and professional life.",
-        imgSrc: "/images/wework/boy-2.png",
+        imgSrc: "/images/testimonial/random1.jpg",
     },
     {
         name: "Neha Kapoor",
