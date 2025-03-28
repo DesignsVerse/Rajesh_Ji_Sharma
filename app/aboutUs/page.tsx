@@ -25,7 +25,7 @@ const AboutUs: React.FC = () => {
       <div className="relative bg-gradient-to-r from-blue-500 to-blue-700 p-10 rounded-lg text-white shadow-lg">
         <h1 className="text-4xl font-bold">About Us</h1>
         <p className="mt-4 text-lg">
-          Welcome to <span className="font-semibold">DesignsVerse</span>, India's leading agency in web development, digital marketing, UI/UX design, ERP solutions, and branding.
+          Welcome to <span className="font-semibold">DesignsVerse</span>, India&apos;s leading agency in web development, digital marketing, UI/UX design, ERP solutions, and branding.
           Our team is passionate about turning ideas into reality with innovation and expertise.
         </p>
       </div>
@@ -78,8 +78,8 @@ const AboutUs: React.FC = () => {
       <div className="mt-12 text-center">
         <h2 className="text-3xl font-bold text-red-900" >Our Vision</h2>
         <p className="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">
-                    At Rajesh Sharma, we are dedicated to bringing clarity, success, and peace into people's lives through the profound wisdom of astrology, numerology, and Vedic sciences. 
-                    Our mission is to decode the cosmic energies and provide insightful guidance to individuals, helping them navigate life's uncertainties with confidence and clarity. 
+                    At Rajesh Sharma, we are dedicated to bringing clarity, success, and peace into people`&apos;s lives through the profound wisdom of astrology, numerology, and Vedic sciences. 
+                    Our mission is to decode the cosmic energies and provide insightful guidance to individuals, helping them navigate life`&apos;s uncertainties with confidence and clarity. 
                     By blending time-honored traditions with a modern approach, we strive to empower individuals with accurate predictions, powerful remedies, and spiritual enlightenment. 
                     Our commitment is to illuminate paths, resolve challenges, and lead people toward a fulfilling and harmonious life, backed by divine knowledge and celestial wisdom.
                 </p>
@@ -94,7 +94,7 @@ const AboutUs: React.FC = () => {
             <div className="relative bg-gradient-to-r from-blue-500 to-blue-700 p-10 rounded-lg text-white shadow-lg">
                 <h1 className="text-4xl font-bold">About Us</h1>
                 <p className="mt-4 text-lg">
-                    Welcome to <span className="font-semibold">DesignsVerse</span>, India's leading agency in web development, digital marketing, UI/UX design, ERP solutions, and branding.
+                    Welcome to <span className="font-semibold">DesignsVerse</span>, India&apos;s leading agency in web development, digital marketing, UI/UX design, ERP solutions, and branding.
                     Our team is passionate about turning ideas into reality with innovation and expertise.
                 </p>
             </div>
@@ -114,7 +114,7 @@ const AboutUs: React.FC = () => {
                         author: "Meera Sharma"
                     }].map((testimonial, index) => (
                         <div key={index} className="p-6 bg-white shadow-md rounded-lg border border-gray-300">
-                            <p className="text-gray-600 italic">"{testimonial.text}"</p>
+                            <p className="text-gray-600 italic">&quot;{testimonial.text}&quot;</p>
                             <h3 className="mt-3 font-bold text-gray-900">- {testimonial.author}</h3>
                         </div>
                     ))}
