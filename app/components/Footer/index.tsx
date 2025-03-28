@@ -75,7 +75,7 @@ const Footer = () => {
                         {link}
                       </Link>
                     ) : link === 'About' ? (
-                      <Link href="#aboutus-section" className="text-white text-lg font-normal mb-6 space-links">
+                      <Link href="/aboutUs" className="text-white text-lg font-normal mb-6 space-links">
                         {link}
                       </Link>
                     ) : link === 'Consultancy' ? (
